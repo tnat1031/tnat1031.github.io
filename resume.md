@@ -136,10 +136,13 @@ Analysis
 OS
 :    Linux, Mac, Windows<br></br>
 
+Software Tools
+:    GSEA, RSEM, Bowtie, Samtools<br></br>
+
 Programming Languages
 :   **R:** Over 8 years of experience using R for exploratory data analysis, data visualization, and analysis workflows. Proficient in many packages/resources including [Bioconductor](https://www.bioconductor.org/), [data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html), [ggplot2](https://ggplot2.tidyverse.org/), [shiny](https://shiny.rstudio.com/), and others. Author of the [cmapR](http://bioconductor.org/packages/3.11/bioc/html/cmapR.html) package for manipulating annotated gene expression matrices.<br></br>
 
-:   **Python:** Over 4 years of experience using Python for data wrangling and writing scripts for web scraping and data processing pipeline automation. Familiar with the [pandas](https://pandas.pydata.org/) and [numpy](https://www.numpy.org/) packages for data analysis.<br></br>
+:   **Python:** Over 4 years of experience using Python for data wrangling and writing scripts for web scraping and data processing pipeline automation. Familiar with the [pandas](https://pandas.pydata.org/) and [numpy](https://www.numpy.org/) packages for data analysis and the [conda](https://docs.conda.io/en/latest/) package management system.<br></br>
 
 :   Basic knowledge of **SQL**, **Matlab**, **Javascript** including **Node.js**, **HTML/CSS**, **Markdown**, **LaTex**<br></br>
 
@@ -165,7 +168,7 @@ Selected Publications
 
 * Amy Li, Xiaodong Lu, **Ted Natoli,** Joshua Bittker, Nisha S. Sipes, Aravind Subramanian, Scott Auerbach, David H. Sherr, and Stefano Monti. 2019. ["The Carcinogenome Project: In Vitro Gene Expression Profiling of Chemical Perturbations to Predict Long-Term Carcinogenicity."](https://www.ncbi.nlm.nih.gov/pubmed/30964323) Environmental Health Perspectives 127 (4).
 
-* Andrea Blasco, **Ted Natoli,** Michael G Endres, Rinat A Sergeev, Steven Randazzo, Jin H Paik, NJ Maximilian Macaluso, Rajiv Narayan, Xiaodong Lu, Dave Peck, Karim R Lakhani, Aravind Subramanian, 2020. ["Improving Deconvolution Methods in Biology through Open Innovation Competitions: An Application to the Connectivity Map."](https://doi.org/10.1101/2020.01.10.897363) *currently in pre-print.*
+* Blasco, Andrea, **Ted Natoli,** Michael G. Endres, Rinat A. Sergeev, Steven Randazzo, Jin H. Paik, N. J. Maximilian Macaluso, et al. n.d. ["Improving Deconvolution Methods in Biology through Open Innovation Competitions: An Application to the Connectivity Map."](https://doi.org/10.1093/bioinformatics/btab192) Bioinformatics. April 7, 2021.
 
 * Blasco, Andrea, Michael G. Endres, Rinat A. Sergeev, Anup Jonchhe, Max Macaluso, Rajiv Narayan, **Ted Natoli,** et al. 2019. ["Advancing Computational Biology and Bioinformatics Research Through Open Innovation Competitions."](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0222165) PLOS ONE 14(9): e0222165.
 
@@ -173,7 +176,7 @@ Selected Publications
 
 * Smith, Ian, Peyton G. Greenside, **Ted Natoli,** David L. Lahr, David Wadden, Itay Tirosh, Rajiv Narayan, et al. 2017. ["Evaluation of RNAi and CRISPR Technologies by Large-Scale Gene Expression Profiling in the Connectivity Map."](https://www.ncbi.nlm.nih.gov/pubmed/29190685) PLoS Biology 15 (11): e2003213.
 
-* Berger, Alice H., Angela N. Brooks, Xiaoyun Wu, Yashaswi Shrestha, Candace Chouinard, Federica Piccioni, Mukta Bagul, et al. 2016. ["High-Throughput Phenotyping of Lung Cancer Somatic Mutations."](https://www.ncbi.nlm.nih.gov/pubmed/27478040) Cancer Cell 30 (2): 214–28.
+<!-- * Berger, Alice H., Angela N. Brooks, Xiaoyun Wu, Yashaswi Shrestha, Candace Chouinard, Federica Piccioni, Mukta Bagul, et al. 2016. ["High-Throughput Phenotyping of Lung Cancer Somatic Mutations."](https://www.ncbi.nlm.nih.gov/pubmed/27478040) Cancer Cell 30 (2): 214–28. -->
 
 
 

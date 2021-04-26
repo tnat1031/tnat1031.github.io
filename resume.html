@@ -6,10 +6,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>resume</title>
   <style>
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+    html {
+      line-height: 1.7;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 40em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin-top: 1.7em;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.7em;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1.7em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1.7em 0 1.7em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      font-style: italic;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      background-color: #f0f0f0;
+      font-size: 85%;
+      margin: 0;
+      padding: .2em .4em;
+    }
+    pre {
+      line-height: 1.5em;
+      padding: 1em;
+      background-color: #f0f0f0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin-top: 1.7em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+    }
+    th, td {
+      border-bottom: 1px solid lightgray;
+      padding: 1em 3em 1em 0;
+    }
+    header {
+      margin-bottom: 6em;
+      text-align: center;
+    }
+    nav a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -23,7 +132,7 @@
    * This CSS document is delivered to you under the CC BY-SA 3.0 License.
    * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
    */
-  
+
   /* Whole document */
   body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -32,7 +141,7 @@
       background: #FFFFFF;
       padding: 10px 10px 10px 10px;
   }
-  
+
   /* Title of the resume */
   h1 {
       font-size: 55px;
@@ -45,7 +154,7 @@
       color: #FFFFFF;
       text-shadow: 1px 1px 1px #333;
   }*/
-  
+
   /* Titles of categories */
   h2 {
       /* This is called "sectioncolor" in the ConTeXt stylesheet. */
@@ -66,7 +175,7 @@
       color: #FFFFFF;
       text-shadow: 1px 1px 1px #333;
   }*/
-  
+
   /* Definitions */
   dt {
       float: left;
@@ -81,12 +190,12 @@
       margin-top:0;
       margin-bottom:7px;
   }
-  
+
   /* Blockquotes */
   blockquote {
       text-align: center
   }
-  
+
   /* Links */
   a {
       text-decoration: none;
@@ -98,13 +207,13 @@
       text-decoration: none;
       text-shadow: 1px 1px 1px #333;
   }
-  
+
   /* Horizontal separators */
   hr {
       color: #21618C
       /*#A6A6A6;*/
   }
-  
+
   table {
       width: 100%;
   }
@@ -214,10 +323,13 @@
 <dt>OS</dt>
 <dd>Linux, Mac, Windows<br></br>
 </dd>
+<dt>Software Tools</dt>
+<dd>GSEA, RSEM, Bowtie, Samtools<br></br>
+</dd>
 <dt>Programming Languages</dt>
 <dd><strong>R:</strong> Over 8 years of experience using R for exploratory data analysis, data visualization, and analysis workflows. Proficient in many packages/resources including <a href="https://www.bioconductor.org/">Bioconductor</a>, <a href="https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html">data.table</a>, <a href="https://ggplot2.tidyverse.org/">ggplot2</a>, <a href="https://shiny.rstudio.com/">shiny</a>, and others. Author of the <a href="http://bioconductor.org/packages/3.11/bioc/html/cmapR.html">cmapR</a> package for manipulating annotated gene expression matrices.<br></br>
 </dd>
-<dd><p><strong>Python:</strong> Over 4 years of experience using Python for data wrangling and writing scripts for web scraping and data processing pipeline automation. Familiar with the <a href="https://pandas.pydata.org/">pandas</a> and <a href="https://www.numpy.org/">numpy</a> packages for data analysis.<br></br></p>
+<dd><p><strong>Python:</strong> Over 4 years of experience using Python for data wrangling and writing scripts for web scraping and data processing pipeline automation. Familiar with the <a href="https://pandas.pydata.org/">pandas</a> and <a href="https://www.numpy.org/">numpy</a> packages for data analysis and the <a href="https://docs.conda.io/en/latest/">conda</a> package management system.<br></br></p>
 </dd>
 <dd><p>Basic knowledge of <strong>SQL</strong>, <strong>Matlab</strong>, <strong>Javascript</strong> including <strong>Node.js</strong>, <strong>HTML/CSS</strong>, <strong>Markdown</strong>, <strong>LaTex</strong><br></br></p>
 </dd>
@@ -236,14 +348,14 @@
 <li><p>Subramanian, Aravind, Rajiv Narayan, Steven M. Corsello, David D. Peck, <strong>Ted E. Natoli,</strong> Xiaodong Lu, Joshua Gould, et al. 2017. <a href="https://www.ncbi.nlm.nih.gov/pubmed/29195078">“A Next Generation Connectivity Map: L1000 Platform and the First 1,000,000 Profiles.”</a> Cell 171 (6): 1437–52.e17.</p></li>
 <li><p>Jin, Xin, Zelalem Demere, Karthik Nair, Ahmed Ali, Gino B. Ferraro, <strong>Ted Natoli</strong>, Amy Deik, et al. 2020. <a href="http://dx.doi.org/10.1038/s41586-020-2969-2">“A Metastasis Map of Human Cancer Cell Lines.”</a> Nature 588 (7837): 331–36.</p></li>
 <li><p>Amy Li, Xiaodong Lu, <strong>Ted Natoli,</strong> Joshua Bittker, Nisha S. Sipes, Aravind Subramanian, Scott Auerbach, David H. Sherr, and Stefano Monti. 2019. <a href="https://www.ncbi.nlm.nih.gov/pubmed/30964323">“The Carcinogenome Project: In Vitro Gene Expression Profiling of Chemical Perturbations to Predict Long-Term Carcinogenicity.”</a> Environmental Health Perspectives 127 (4).</p></li>
-<li><p>Andrea Blasco, <strong>Ted Natoli,</strong> Michael G Endres, Rinat A Sergeev, Steven Randazzo, Jin H Paik, NJ Maximilian Macaluso, Rajiv Narayan, Xiaodong Lu, Dave Peck, Karim R Lakhani, Aravind Subramanian, 2020. <a href="https://doi.org/10.1101/2020.01.10.897363">“Improving Deconvolution Methods in Biology through Open Innovation Competitions: An Application to the Connectivity Map.”</a> <em>currently in pre-print.</em></p></li>
+<li><p>Blasco, Andrea, <strong>Ted Natoli,</strong> Michael G. Endres, Rinat A. Sergeev, Steven Randazzo, Jin H. Paik, N. J. Maximilian Macaluso, et al. n.d. <a href="https://doi.org/10.1093/bioinformatics/btab192">“Improving Deconvolution Methods in Biology through Open Innovation Competitions: An Application to the Connectivity Map.”</a> Bioinformatics. April 7, 2021.</p></li>
 <li><p>Blasco, Andrea, Michael G. Endres, Rinat A. Sergeev, Anup Jonchhe, Max Macaluso, Rajiv Narayan, <strong>Ted Natoli,</strong> et al. 2019. <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0222165">“Advancing Computational Biology and Bioinformatics Research Through Open Innovation Competitions.”</a> PLOS ONE 14(9): e0222165.</p></li>
 </ul>
 <!-- * Litichevskiy, Lev, Ryan Peckner, Jennifer G. Abelin, Jacob K. Asiedu, Amanda L. Creech, John F. Davis, Desiree Davison, et al. 2018. ["A Library of Phosphoproteomic and Chromatin Signatures for Characterizing Cellular Responses to Drug Perturbations."](https://www.ncbi.nlm.nih.gov/pubmed/29655704) Cell Systems 6 (4): 424–43.e7. -->
 <ul>
-<li><p>Smith, Ian, Peyton G. Greenside, <strong>Ted Natoli,</strong> David L. Lahr, David Wadden, Itay Tirosh, Rajiv Narayan, et al. 2017. <a href="https://www.ncbi.nlm.nih.gov/pubmed/29190685">“Evaluation of RNAi and CRISPR Technologies by Large-Scale Gene Expression Profiling in the Connectivity Map.”</a> PLoS Biology 15 (11): e2003213.</p></li>
-<li><p>Berger, Alice H., Angela N. Brooks, Xiaoyun Wu, Yashaswi Shrestha, Candace Chouinard, Federica Piccioni, Mukta Bagul, et al. 2016. <a href="https://www.ncbi.nlm.nih.gov/pubmed/27478040">“High-Throughput Phenotyping of Lung Cancer Somatic Mutations.”</a> Cancer Cell 30 (2): 214–28.</p></li>
+<li>Smith, Ian, Peyton G. Greenside, <strong>Ted Natoli,</strong> David L. Lahr, David Wadden, Itay Tirosh, Rajiv Narayan, et al. 2017. <a href="https://www.ncbi.nlm.nih.gov/pubmed/29190685">“Evaluation of RNAi and CRISPR Technologies by Large-Scale Gene Expression Profiling in the Connectivity Map.”</a> PLoS Biology 15 (11): e2003213.</li>
 </ul>
+<!-- * Berger, Alice H., Angela N. Brooks, Xiaoyun Wu, Yashaswi Shrestha, Candace Chouinard, Federica Piccioni, Mukta Bagul, et al. 2016. ["High-Throughput Phenotyping of Lung Cancer Somatic Mutations."](https://www.ncbi.nlm.nih.gov/pubmed/27478040) Cancer Cell 30 (2): 214–28. -->
 <hr />
 </body>
 </html>
